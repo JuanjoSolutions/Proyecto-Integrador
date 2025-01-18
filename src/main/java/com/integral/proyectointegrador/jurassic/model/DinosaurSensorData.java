@@ -11,17 +11,17 @@ public class DinosaurSensorData {
     private Long id;
     private String dinosaurId;
     private String sensorType;
-    private String value;
-    private LocalDateTime timestamp;
+    private String sensorValue;
+    private LocalDateTime measurementTime;
 
     public DinosaurSensorData() {
     }
 
-    public DinosaurSensorData(String dinosaurId, String sensorType, String value, LocalDateTime timestamp) {
+    public DinosaurSensorData(String dinosaurId, String sensorType, String sensorValue, LocalDateTime measurementTime) {
         this.dinosaurId = dinosaurId;
         this.sensorType = sensorType;
-        this.value = value;
-        this.timestamp = timestamp;
+        this.sensorValue = sensorValue;
+        this.measurementTime = measurementTime;
     }
 
     public Long getId() {
@@ -48,20 +48,20 @@ public class DinosaurSensorData {
         this.sensorType = sensorType;
     }
 
-    public String getValue() {
-        return value;
+    public String getSensorValue() {
+        return sensorValue;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setSensorValue(String value) {
+        this.sensorValue = value;
     }
 
-    public LocalDateTime getTimestamp() {
-        return timestamp;
+    public LocalDateTime getMeasurementTime() {
+        return measurementTime;
     }
 
-    public void setTimestamp(LocalDateTime timestamp) {
-        this.timestamp = timestamp;
+    public void setMeasurementTime(LocalDateTime timestamp) {
+        this.measurementTime = timestamp;
     }
 }
 

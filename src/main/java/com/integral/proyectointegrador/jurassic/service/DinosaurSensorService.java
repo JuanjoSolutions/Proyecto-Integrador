@@ -20,7 +20,7 @@ public class DinosaurSensorService {
 
     public Mono<DinosaurSensorData> saveSensorData(DinosaurSensorData data) {
         return Mono.fromCallable(() -> {
-            data.setTimestamp(LocalDateTime.now());
+            data.setMeasurementTime(LocalDateTime.now());
             return repository.save(data);
         }).subscribeOn(Schedulers.boundedElastic());
     }
