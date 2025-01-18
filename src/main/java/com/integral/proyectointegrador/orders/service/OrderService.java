@@ -25,8 +25,9 @@ public class OrderService {
         order.setStatus(newStatus);
         return orderRepository.save(order);
     }
-    public List<Order> getOrdersByStatus(String status) {
-        return orderRepository.findByStatus(status);
+
+    public List<Order> findAll() {
+        return orderRepository.findAll();
     }
 }
 

@@ -14,6 +14,18 @@ public class Order {
     private BigDecimal price;
     private String status;
 
+    // === Constructores ===
+    public Order() {
+        // Constructor sin argumentos obligatorio para JPA
+    }
+
+    public Order(String product, int quantity, BigDecimal price, String status) {
+        this.product = product;
+        this.quantity = quantity;
+        this.price = price;
+        this.status = status;
+    }
+
     // Getters/Setters
     public Long getId() {
         return id;
