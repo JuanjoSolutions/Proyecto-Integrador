@@ -1,15 +1,11 @@
 package com.integral.proyectointegrador.stark.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
 @Entity
-@Table(name = "raw_data")
+@Table(name = "raw_data_record")
 public class RawDataRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
