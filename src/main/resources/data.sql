@@ -41,6 +41,17 @@ VALUES (2, 'Alohomora', 'Unlock doors', 10);
 -- Módulo stark (RawData)
 ------------------------------------------------------------------------
 
-INSERT INTO raw_data_record (source, payload, received_at) VALUES ('SensorA', 'DataA', '2025-01-01T10:00:00');
-INSERT INTO raw_data_record (source, payload, received_at) VALUES ('SensorB', 'DataB', '2025-01-02T11:00:00');
+INSERT INTO raw_data_record (source, payload, received_at)
+VALUES ('SensorA', 'DataA', '2025-01-01T10:00:00');
+INSERT INTO raw_data_record (source, payload, received_at)
+VALUES ('SensorB', 'DataB', '2025-01-02T11:00:00');
+
+------------------------------------------------------------------------
+-- Módulo mars (MarsSensor)
+------------------------------------------------------------------------
+
+INSERT INTO mars_sensor_data (id, sensor_name, sensor_value, measurement_time)
+VALUES (1, 'TempSensor', 23.5, '2025-01-15 10:15:30'),
+       (2, 'HumiditySensor', 45.2, '2025-01-15 10:20:45');
+
 
